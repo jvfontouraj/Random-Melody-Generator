@@ -27,20 +27,19 @@ document.querySelector('.find').addEventListener('click', function(){
 
     //hidde "scale" input if "Chromatic Scale" is on "refnote"
 
-    if(refNote === 'Chromatic Scale'){
+    if(scale === 'Chromatic Scale'){
         melodyScale = notes;
         console.log(melodyScale)
-    } else{
-        if(scale === "Major"){
-            numbersScale.push(refNoteIndex, refNoteIndex+2, refNoteIndex+4, refNoteIndex+5, refNoteIndex+7, refNoteIndex+9, refNoteIndex+11)
-            setMelodyScale()
-            console.log(melodyScale)
-        } else if(scale === "Minor"){
-            numbersScale.push(refNoteIndex, refNoteIndex+2, refNoteIndex+3, refNoteIndex+5, refNoteIndex+7, refNoteIndex+8, refNoteIndex+10)
-            setMelodyScale()
-            console.log(melodyScale)
-        }
+    } else if(scale === "Major"){
+        numbersScale.push(refNoteIndex, refNoteIndex+2, refNoteIndex+4, refNoteIndex+5, refNoteIndex+7, refNoteIndex+9, refNoteIndex+11)
+        setMelodyScale()
+        console.log(melodyScale)
+    } else if(scale === "Minor"){
+        numbersScale.push(refNoteIndex, refNoteIndex+2, refNoteIndex+3, refNoteIndex+5, refNoteIndex+7, refNoteIndex+8, refNoteIndex+10)
+        setMelodyScale()
+        console.log(melodyScale)
     }
+    
 
     for(let i=0; i<numberNotes; i++){
         let noteNumber = Math.trunc(Math.random()*6)+1
