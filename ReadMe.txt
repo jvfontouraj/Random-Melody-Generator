@@ -7,6 +7,6 @@
 
 .Input 2 -> Escala Maior ou Menor (se cromática, desativar input)
 
-.Input 3 -> Quantidade de notas (até 20)
+.Input 3 -> Quantidade de notas (até 10)
 	Notas = C, C#, D, D#, E, F, F#, G, G#, A, A#, B
 

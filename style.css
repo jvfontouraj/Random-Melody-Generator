@@ -1,3 +1,16 @@
 .hidden {
-    display: none;
+    display: inherit;
+  }
+
+body {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 100vh; 
+  background-color: #f1f1f1;
+}
+
+select, button {
+  margin: 10px;
   }
